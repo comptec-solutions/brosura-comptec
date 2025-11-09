@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comptec Solutions - Broșura Ultra Luxury</title>
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    background:#f4f4f4;
+    color:#111;
+    line-height:1.6;
+    scroll-behavior:smooth;
+}
+
+.fade-in { opacity:0; transform:translateY(30px); animation:fadeIn 1s forwards; }
+@keyframes fadeIn { to {opacity:1; transform:translateY(0);} }
+
+.container {
+    max-width:1100px;
+    margin:40px auto;
+    background:#fff;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 40px 100px rgba(0,0,0,0.25);
+    border-top:6px solid #FFD700;
+}
+
+header {
+    background: linear-gradient(145deg, #FFD700, #f2e06d);
+    text-align:center;
+    padding:120px 30px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+header h1 { font-size:60px; font-weight:bold; letter-spacing:2px; text-transform:uppercase; margin-bottom:15px; text-shadow:2px 2px 8px rgba(0,0,0,0.2); }
+header p { font-size:24px; font-weight:500; color:#222; }
+
+section { padding:80px 50px; }
+section h2 { font-size:40px; margin-bottom:50px; text-transform:uppercase; letter-spacing:1px; display:inline-block; border-bottom:5px solid #FFD700; padding-bottom:8px; }
+
+.card {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background: linear-gradient(145deg, #FFF7B2, #FFF3A0);
+    border-radius:20px;
+    padding:40px;
+    margin-bottom:50px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.card:hover { transform: translateY(-6px) scale(1.02); box-shadow:0 30px 80px rgba(0,0,0,0.35); }
+
+.card-text { flex:1; padding-right:30px; font-size:18px; color:#222; }
+.card-img { flex:0 0 40%; text-align:center; }
+.card-img img { width:100%; max-width:350px; height:auto; border-radius:15px; box-shadow:0 12px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease; }
+.card-img img:hover { transform: scale(1.03); }
+
+.card.reverse { flex-direction: row-reverse; }
+.card.reverse .card-text { padding-right:0; padding-left:30px; }
+
+ul { padding-left:25px; }
+li { margin-bottom:14px; position: relative; padding-left:25px; font-size:18px; font-weight:500; }
+li::before { content:"✔"; color:#FFD700; position:absolute; left:0; font-weight:bold; }
+
+footer { text-align:center; padding:50px; background: linear-gradient(145deg, #111, #222); color:#FFD700; font-size:16px; letter-spacing:0.5px; }
+
+@media(max-width:900px){
+    section { padding:60px 30px; }
+    header h1{ font-size:48px; }
+    header p{ font-size:20px; }
+    section h2{ font-size:32px; }
+    .card { flex-direction:column; text-align:center; }
+    .card-text { padding:0; margin-bottom:25px; }
+    .card-img { flex:1; }
+    .card-img img { max-width:80%; margin:0 auto; }
+}
+
+@media print {
+    body { -webkit-print-color-adjust: exact; }
+    header, footer, .card { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header class="fade-in">
+    <h1>Comptec Solutions</h1>
+    <p>Experții tăi în eficientizarea instalațiilor de aer și gaze tehnice</p>
+</header>
+
+<section class="fade-in">
+    <h2>Despre noi</h2>
+    <div class="card fade-in">
+        <div class="card-text">
+            <p>Comptec Solutions S.R.L. oferă soluții complete pentru instalații de aer comprimat, azot, oxigen și gaze naturale. Peste 14 ani de experiență și peste 150 proiecte realizate la cheie pentru clienți industriali.</p>
+        </div>
+        <div class="card-img">
+            <img src="images/audit.jpg" alt="Audit instalatii de aer">
+        </div>
+    </div>
+</section>
+
+<section class="fade-in">
+    <h2>Serviciile noastre</h2>
+    <div class="card reverse fade-in">
+        <div class="card-text">
+            <p>Audit complet al instalațiilor de aer comprimat și gaze tehnice</p>
+            <p>Consultanță și proiectare instalații industriale</p>
+            <p>Instalare și punere în funcțiune 'la cheie'</p>
+            <p>Monitorizare și întreținere echipamente</p>
+        </div>
+        <div class="card-img">
+            <img src="images/consultantasiproiectareinstalatiiindustriale.jpeg" alt="Consultanta si proiectare instalatii industriale">
+        </div>
+    </div>
+</section>
+
+<section class="fade-in">
+    <h2>Solutii și echipamente</h2>
+    <div class="card fade-in">
+        <div class="card-text">
+            <ul>
+                <li>Compresoare: aer, azot, oxigen, GNC/CNG</li>
+                <li>Stații industriale de compresoare și ventilații</li>
+                <li>Rețele aer comprimat și vacuum</li>
+                <li>Instalații personalizate 'la cheie' pentru industrie</li>
+            </ul>
+        </div>
+        <div class="card-img">
+            <img src="images/consultantatehnica.jpeg" alt="Consultanta tehnica">
+        </div>
+    </div>
+</section>
+
+<section class="fade-in">
+    <h2>Avantaje pentru clienti</h2>
+    <div class="card fade-in">
+        <div class="card-text">
+            <ul>
+                <li>Eficiență sporită a instalațiilor</li>
+                <li>Reducerea costurilor operaționale</li>
+                <li>Soluții personalizate pentru fiecare client</li>
+                <li>Creșterea duratei de viață a echipamentelor</li>
+                <li>Expertiză și suport continuu</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="fade-in">
+    <p>Str. Mihai Viteazul 40A, 107175 Cornu, Prahova, România | Tel: +40 730 223 558 | www.comptec.ro</p>
+</footer>
+
+</div>
+
+<script>
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = "translateY(0)";
+        observer.unobserve(entry.target);
+    });
+}, appearOptions);
+faders.forEach(fader => appearOnScroll.observe(fader));
+</script>
+
+</body>
+</html>
